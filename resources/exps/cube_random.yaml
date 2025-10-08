@@ -1,0 +1,18 @@
+scene_name: cube_random
+solver_name: fem_constant_galerkin_cuda3
+fps: 60
+frames: 60
+substeps: 100
+verbose_logging: true
+precision: double
+
+geometry_file: scenes/cube_random/cube_random.bgeo
+output_path: ./
+
+fem:
+    random_position: true
+    youngs_modulus: 1e6
+    stiffness_collision: 0e6
+    stiffness_self_collision: 0e6
+    damping_ratio: 2e-5
+    gravity: [0, 0, 0]

@@ -1,0 +1,18 @@
+scene_name: bunny_drape_1M
+solver_name: fem_constant_galerkin_cuda3
+fps: 60
+frames: 60
+substeps: 400
+verbose_logging: false
+precision: float
+
+geometry_file: scenes/bunny_drape_1M/bunny_drape.bgeo
+output_path: ./
+
+fem:
+    enable_parallel_compute: false
+    enable_self_collision: false
+    youngs_modulus: 1e6
+    stiffness_collision: 0e6
+    stiffness_self_collision: 0e6
+    damping_ratio: 0e-8

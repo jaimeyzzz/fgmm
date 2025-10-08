@@ -1,0 +1,20 @@
+scene_name: dragon_drop
+solver_name: fem_constant_galerkin_cuda3
+
+# solver parameters
+fps: 60
+frames: 60
+substeps: 400
+verbose_logging: false
+precision: float
+
+geometry_file: scenes/dragon_drop/dragon_drop.bgeo
+output_path: ./
+
+fem:
+    enable_parallel_compute: false
+    enable_self_collision: false
+    youngs_modulus: 1e6
+    stiffness_collision: 1e6
+    stiffness_self_collision: 1e6
+    damping_ratio: 1e-7

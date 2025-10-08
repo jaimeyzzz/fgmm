@@ -1,0 +1,4 @@
+[submodule "external/qiwu"]
+	path = external/qiwu
+	url = git@github.com:jaimeyzzz/qiwu.git
+	branch = main

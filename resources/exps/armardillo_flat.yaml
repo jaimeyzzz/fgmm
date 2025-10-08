@@ -1,0 +1,19 @@
+scene_name: armardillo_flat
+solver_name: fem_constant_galerkin_cuda3
+fps: 60
+frames: 120
+substeps: 100
+verbose_logging: false
+precision: float
+
+geometry_file: scenes/armardillo_flat/armardillo_flat.bgeo
+output_path: ./
+
+fem:
+    random_position: true
+    random_position_flat: true
+    youngs_modulus: 1e6
+    stiffness_collision: 0e6
+    stiffness_self_collision: 0e6
+    damping_ratio: 8e-6
+    gravity: [0, 0, 0]
